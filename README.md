@@ -1,4 +1,4 @@
-# Fundlytics Dashboard
+# InvestIQ Dashboard
 
 Interactive React dashboard for financial analytics with blog, YTD and monthly returns, NAV/drawdown charts, and overlay tables. Parses Excel data, offers filtering, pagination, and a vibrant UI for portfolios and news.
 
@@ -21,9 +21,10 @@ Interactive React dashboard for financial analytics with blog, YTD and monthly r
 ## Quick Start
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/your-username/fundlytics-app.git
-   cd fundlytics-app
+   git clone https://github.com/your-username/InvestIQ-app.git
+   cd InvestIQ-app
 
    cd backend
    npm install
@@ -32,11 +33,12 @@ Interactive React dashboard for financial analytics with blog, YTD and monthly r
    cd frontend
    npm install
    npm start
-👉 http://localhost:8000 (runs for backend)
-👉 http://localhost:3000 (runs for frontend)
+   👉 http://localhost:8000 (runs for backend)
+   👉 http://localhost:3000 (runs for frontend)
 
+   ```
 
-4. Navigate to Home and Portfolios to explore features
+2. Navigate to Home and Portfolios to explore features
 
 ## Folder Structure
 
@@ -49,9 +51,3 @@ Interactive React dashboard for financial analytics with blog, YTD and monthly r
 - Replace Excel NAV file as needed
 - Change color palette in CSS for theming
 - Extend blog/news section with your own endpoint
-
-
-
-
-
-
