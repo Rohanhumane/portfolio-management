@@ -59,7 +59,9 @@ const HomePage = () => {
 export default HomePage;
 
 export const blogLoader = async () => {
-  const res = await fetch("http://localhost:8000/posts/");
+  const res = await fetch(
+    "https://portfolio-management-backend.onrender.com/posts/"
+  );
   if (!res.ok) {
     throw Error("Failed to fetch Api");
   }

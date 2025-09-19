@@ -15,7 +15,9 @@ const About = () => {
 export default About;
 
 export const aboutLoader = async () => {
-  const res = await fetch("http://localhost:8000/about/");
+  const res = await fetch(
+    "https://portfolio-management-backend.onrender.com/about/"
+  );
   if (!res.ok) {
     throw Error("Failed to fetch Api");
   }
