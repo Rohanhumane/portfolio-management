@@ -1,0 +1,46 @@
+.home-page {
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pagination {
+  margin: 1rem 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.pagination button {
+  background-color: #c96be6;
+  color: #fff;
+  border: none;
+  margin: 0 5px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 5px;
+  font-weight: 600;
+  color: #5e7891;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.pagination span:hover {
+  text-decoration: underline;
+}

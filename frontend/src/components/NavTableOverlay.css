@@ -1,0 +1,95 @@
+.overlay-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.overlay-content {
+  width: 560px;
+  max-width: 90vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 0 22px;
+  padding: 20px;
+  position: relative;
+
+  animation: slideInRight 0.3s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #888;
+}
+
+.close-btn:hover {
+  color: #444;
+}
+
+.nav-table-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.nav-table-filters label select {
+  margin-left: 0.5rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+.all-nav-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nav-table-scroll {
+  max-height: calc(90vh - 120px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: inherit;
+  cursor: progress;
+}
+
+.all-nav-table thead tr {
+  background: #9598e5;
+}
+
+.all-nav-table th,
+.all-nav-table td {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 0.9rem;
+  border: 1px solid #030bf4;
+}
+
+.all-nav-table td {
+  background: #e3f0fc;
+}

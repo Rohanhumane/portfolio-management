@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px 30px;
+  overflow-y: auto; 
+  background-color: #FFFDF6;
+  box-sizing: border-box;
+}
