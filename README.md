@@ -33,7 +33,7 @@ Interactive React dashboard for financial analytics with blog, YTD and monthly r
    npm install
    npm start
 👉 http://localhost:8000 (runs for backend)
-👉 http://localhost:300 (runs for frontend)
+👉 http://localhost:3000 (runs for frontend)
 
 
 4. Navigate to Home and Portfolios to explore features
