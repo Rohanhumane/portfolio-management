@@ -1,4 +1,4 @@
-
+import { useEffect } from "react";
 import "./NavTableOverlay.css";
 
 const NavTableOverlay = ({
@@ -12,6 +12,18 @@ const NavTableOverlay = ({
   setNavMonth,
   monthlyReturns,
 }) => {
+  
+  useEffect(() => {
+    if (visible) {
+      document.body.classList.add("nav-overlay-open");
+    } else {
+      document.body.classList.remove("nav-overlay-open");
+    }
+    return () => {
+      document.body.classList.remove("nav-overlay-open");
+    };
+  }, [visible]);
+
   if (!visible) return null;
 
   return (

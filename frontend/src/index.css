@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+body.nav-overlay-open {
+  overflow: hidden;
+  position: fixed;
+}

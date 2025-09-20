@@ -67,3 +67,4 @@ export const blogLoader = async () => {
   }
   return await res.json();
 };
+
